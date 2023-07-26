@@ -9,10 +9,9 @@ def bubblesort(array)
           array[i], array[i + 1] = array[i + 1], array[i]
           sorted = false
         end
-      end
     end
+end
     array
-  end
 end
 
 puts bubblesort(array)

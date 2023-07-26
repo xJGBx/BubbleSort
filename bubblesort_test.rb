@@ -1,18 +1,5 @@
 require 'test/unit'
-
-def bubblesort(array)
-  sorted = false
-  until sorted
-    sorted = true
-    (array.length - 1).times do |i|
-      if array[i] > array[i + 1]
-        array[i], array[i + 1] = array[i + 1], array[i]
-        sorted = false
-      end
-    end
-  end
-  array
-end
+require_relative 'bubblesort'
 
 # Test for bubblesort method
 class TestBubbleSort < Test::Unit::TestCase
